@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Your Way Travel</title>
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- ══════════════════════════════════════════
+       EMAILJS SDK
+       Required for the contact form to send emails.
+       No changes needed here.
+       ══════════════════════════════════════════ -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+
+      <!-- ── LOGO PLACEHOLDER ──
+           Replace with <img> tag when real logo is ready.
+      ── -->
+      <a href="../index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">✦</span>
+        Your Way Travel
+      </a>
+
+      <button class="navbar__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../trips/index.html">Previous Trips</a></li>
+        <li><a href="../reviews/index.html">Reviews</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       PAGE HEADER
+       ══════════════════════════════════════════ -->
+  <header class="page-header">
+    <h1>Contact Us</h1>
+    <p>Tell us about your dream trip — we'll make it happen.</p>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT SECTION
+       ══════════════════════════════════════════ -->
+  <section class="contact-page">
+    <div class="container contact-page__inner">
+
+      <!-- Intro text -->
+      <div class="contact-intro">
+        <h2>Let's Plan Your Adventure</h2>
+        <p>
+          Whether you're dreaming of a solo journey, coordinating a group getaway,
+          or just starting to explore your options — we'd love to hear from you.
+          Fill out the form below and we'll be in touch within 1–2 business days.
+        </p>
+        <ul class="contact-details">
+          <li>📧 yourwaytrav3l@gmail.com</li>
+          <li>🌍 Adventure travel worldwide</li>
+          <li>👥 Solo, small groups (4+), large groups (up to 14)</li>
+        </ul>
+      </div>
+
+      <!-- ══════════════════════════════════════════
+           CONTACT FORM
+           Fields: Name, Email, Destinations, Budget, Wishlist
+           Submits via EmailJS — see contact.js for setup instructions
+           ══════════════════════════════════════════ -->
+      <div class="contact-form-wrap">
+        <form id="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your full name"
+              required
+              autocomplete="name"
+            />
+            <span class="field-error" id="error-name"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+            />
+            <span class="field-error" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="destinations">Desired Destinations <span class="required">*</span></label>
+            <input
+              type="text"
+              id="destinations"
+              name="destinations"
+              placeholder="e.g. Patagonia, Japan, Costa Rica..."
+              required
+            />
+            <span class="field-error" id="error-destinations"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Approximate Budget <span class="required">*</span></label>
+            <select id="budget" name="budget" required>
+              <option value="" disabled selected>Select a budget range</option>
+              <option value="Under $1,000">Under $1,000</option>
+              <option value="$1,000 – $3,000">$1,000 – $3,000</option>
+              <option value="$3,000 – $7,000">$3,000 – $7,000</option>
+              <option value="$7,000+">$7,000+</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+            <span class="field-error" id="error-budget"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="wishlist">Wishlist / Notes</label>
+            <textarea
+              id="wishlist"
+              name="wishlist"
+              rows="5"
+              placeholder="Tell us what you're hoping to experience — activities, must-sees, dietary needs, group size, travel dates, anything!"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+            Send My Inquiry
+          </button>
+
+          <!-- Success / error feedback — shown after form submission -->
+          <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Your Way Travel</strong>
+        <p>Adventure travel planned around you — solo, small group, or large.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../trips/index.html">Previous Trips</a></li>
+          <li><a href="../reviews/index.html">Reviews</a></li>
+          <li><a href="index.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      &copy; <span id="footer-year"></span> Your Way Travel. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/global.js"></script>
+  <script src="contact.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* ============================================================
+   YOUR WAY TRAVEL — contact.css
+   Contact Us page styles
+   ============================================================ */
+
+.contact-page {
+  padding: 4rem 0 6rem;
+}
+
+.contact-page__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+/* ── Intro Column ── */
+.contact-intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-intro p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+.contact-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-details li {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+/* ── Form Column ── */
+.contact-form-wrap {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 2.5rem 2.75rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Form Groups ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+}
+
+.required {
+  color: #c0392b;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 0.7rem 1rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+  width: 100%;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b0a090;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(74,124,89,0.15);
+}
+
+/* Validation error state */
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192,57,43,0.12);
+}
+
+.field-error {
+  font-size: 0.8rem;
+  color: #c0392b;
+  margin-top: 0.3rem;
+  min-height: 1rem;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235C5346' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* ── Submit Button ── */
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ── Feedback Message ── */
+.form-feedback {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: calc(var(--radius) - 2px);
+  font-size: 0.95rem;
+  display: none;
+}
+
+.form-feedback.success {
+  display: block;
+  background: #e8f5ed;
+  color: #2d6a4f;
+  border: 1px solid #74c69d;
+}
+
+.form-feedback.error {
+  display: block;
+  background: #fdecea;
+  color: #922b21;
+  border: 1px solid #e57373;
+}
+
+/* ── Responsive ── */
+@media (max-width: 820px) {
+  .contact-page__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .contact-form-wrap {
+    padding: 2rem 1.5rem;
+  }
+}

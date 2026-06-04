@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Previous Trips — Your Way Travel</title>
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  <link rel="stylesheet" href="trips.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+
+      <!-- ── LOGO PLACEHOLDER ──
+           Replace with <img> tag when real logo is ready.
+           See assets/css/global.css for instructions.
+      ── -->
+      <a href="../index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">✦</span>
+        Your Way Travel
+      </a>
+
+      <button class="navbar__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Previous Trips</a></li>
+        <li><a href="../reviews/index.html">Reviews</a></li>
+        <li><a href="../contact/index.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       PAGE HEADER
+       ══════════════════════════════════════════ -->
+  <header class="page-header">
+    <h1>Previous Trips</h1>
+    <p>Every adventure we've planned — in photos, videos, and memories.</p>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       FILTER BAR
+       ══════════════════════════════════════════ -->
+  <section class="trips-page">
+    <div class="container">
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="image">Photos</button>
+        <button class="filter-btn" data-filter="video">Videos</button>
+      </div>
+
+      <!-- ══════════════════════════════════════════
+           TRIP CARDS GRID
+           Populated dynamically from trips.json by trips.js
+           ══════════════════════════════════════════ -->
+      <div class="trips-grid" id="trips-grid">
+        <p class="loading-text">Loading trips...</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Your Way Travel</strong>
+        <p>Adventure travel planned around you — solo, small group, or large.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Previous Trips</a></li>
+          <li><a href="../reviews/index.html">Reviews</a></li>
+          <li><a href="../contact/index.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      &copy; <span id="footer-year"></span> Your Way Travel. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/global.js"></script>
+  <script src="trips.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

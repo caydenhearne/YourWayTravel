@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Patagonia Trek — Group of 8",
+    "destination": "Patagonia, Argentina",
+    "description": "Eight adventurers tackled the W-Trek in Torres del Paine over 7 days. Stunning granite towers, glacial lakes, and the kind of camaraderie only the trail can forge. This was the trip that started it all.",
+    "type": "image",
+
+    "src": "assets/images/trips/placeholder1.jpg"
+
+  },
+  {
+    "title": "Costa Rica Canopy Adventure — Group of 6",
+    "destination": "La Fortuna, Costa Rica",
+    "description": "Zip-lining through cloud forest, soaking in Arenal hot springs, and white-water rafting on the Sarapiquí River. Six friends who came back as a family.",
+    "type": "image",
+
+    "src": "assets/images/trips/placeholder2.jpg"
+
+  },
+  {
+    "title": "Solo Journey Through Japan",
+    "destination": "Kyoto & Osaka, Japan",
+    "description": "A solo traveler's dream — cherry blossoms in Maruyama Park, temple-hopping in Arashiyama, and late-night ramen in Dotonbori. Proof that solo travel done right is the most freeing thing in the world.",
+    "type": "image",
+
+    "src": "assets/images/trips/placeholder3.jpg"
+
+  }
+]
