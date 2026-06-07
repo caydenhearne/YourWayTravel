@@ -1,29 +1,38 @@
 [
   {
-    "title": "Patagonia Trek — Group of 8",
+    "title": "Patagonia Trek — Group of 3",
     "destination": "Patagonia, Argentina",
-    "description": "Eight adventurers tackled the W-Trek in Torres del Paine over 7 days. Stunning granite towers, glacial lakes, and the kind of camaraderie only the trail can forge. This was the trip that started it all.",
+    "description": "Three adventurers visited sites around Patagonia, including the Perito Moreno Glacier and the Fitz Roy massif. A total of three nights and 4 days was spent exploring the area and its natural wonders.",
     "type": "image",
-
-    "src": "assets/images/trips/placeholder1.jpg"
+    "src": "../assets/images/trips/placeholder1.jpg"
 
   },
   {
-    "title": "Costa Rica Canopy Adventure — Group of 6",
-    "destination": "La Fortuna, Costa Rica",
-    "description": "Zip-lining through cloud forest, soaking in Arenal hot springs, and white-water rafting on the Sarapiquí River. Six friends who came back as a family.",
+    "title": "Northern Costa Rica Adventure — Group of 2",
+    "destination": "San Jose, La Fortuna, and Tamarindo Costa Rica",
+    "description": "Zip-lining through cloud forest, soaking in Arenal hot springs, and white-water rafting on the Sarapiquí River. Two brothers on an unforgettable journey.",
     "type": "image",
 
-    "src": "assets/images/trips/placeholder2.jpg"
+    "src": "../assets/images/trips/CostaRica06-24/CostaRicaSurf.jpg"
 
   },
   {
-    "title": "Solo Journey Through Japan",
-    "destination": "Kyoto & Osaka, Japan",
-    "description": "A solo traveler's dream — cherry blossoms in Maruyama Park, temple-hopping in Arashiyama, and late-night ramen in Dotonbori. Proof that solo travel done right is the most freeing thing in the world.",
+    "title": "Spring Break in Belize - group of 13",
+    "destination": "San Ignacio & Ambergris Caye, Belize",
+    "description": "A week-long adventure filled with snorkeling, beach lounging, and exploring ancient Mayan ruins. This trip was all about relaxation and fun in the sun.",
     "type": "image",
 
-    "src": "assets/images/trips/placeholder3.jpg"
+    "src": "../assets/images/trips/Belize03-26/GroupInBelize.jpg"
+
+
+  },
+  {
+    "title": "Family Vacation in Australia and New Zealand",
+    "destination": "Sydney, Australia in addition to Auckland, Raglan, & Hamilton, New Zealand",
+    "description": "A perfect blend of city and adventure — exploring the Sydney Opera House, relaxing on Bondi Beach, and then jetting off to New Zealand for some adrenaline-pumping surfing and soccer games.",
+    "type": "image",
+
+    "src": "../assets/images/trips/AuzNz06-23/AuzNzSydney.jpg"
 
   }
 ]
